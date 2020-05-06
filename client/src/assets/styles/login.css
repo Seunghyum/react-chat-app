@@ -1,0 +1,105 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image: url(http://bit.ly/2gPLxZ4);
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+.login .blurred-box {
+  position: relative;
+  width: 250px;
+  top: calc(50% - 300px);
+  left: calc(50% - 125px);
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.login .blurred-box:after {
+  content: "";
+  width: 300px;
+  background: inherit;
+  position: absolute;
+  left: -25px;
+  right: 0;
+  top: -25px;
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter: blur(10px);
+}
+.login .enrolled-user {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+.login .user-login-box {
+  position: relative;
+  padding: 30px 0px;
+  text-align: center;
+  z-index: 1;
+}
+.login .user-login-box .user-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.login .user-login-box .user-list .user-list-item {
+  margin-bottom: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+.login .user-login-box .user-list .user-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.login .user-login-box .user-list .user-list-item .user-list-item-photo {
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 45px;
+  vertical-align: middle;
+}
+.login .user-login-box .user-list .user-list-item button {
+  vertical-align: middle;
+}
+.login .user-login-box > * {
+  display: inline-block;
+  width: 200px;
+}
+.login .section-title {
+  color: aliceblue;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.login .user-icon-wrapper {
+  text-align: center;
+}
+.login .user-icon-wrapper .user-icon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://www.pngkey.com/png/detail/230-2301779_best-classified-apps-default-user-profile.png);
+  background-color: white;
+  margin: auto;
+}
+.login .user-name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+}
+.login input.user-password {
+  width: 120px;
+  height: 18px;
+  opacity: 0.4;
+  border-radius: 2px;
+  padding: 5px 15px;
+  border: 0;
+}

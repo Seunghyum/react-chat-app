@@ -1,0 +1,33 @@
+{
+  "name": "shmoon",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "client:dev": "yarn workspace chat-client dev",
+    "server:dev": "yarn workspace chat-server dev",
+    "dev": "concurrently --kill-others-on-fail \"yarn server:dev\"  \"yarn client:dev\"",
+    "sb": "yarn workspace chat-client sb"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-backgrounds": "^5.3.14",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-docs": "^5.3.14",
+    "@storybook/addon-storysource": "^5.3.14",
+    "@storybook/addon-viewport": "^5.3.14",
+    "@storybook/react": "^5.3.14",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "react-is": "^16.13.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3"
+  }
+}
